@@ -24,3 +24,76 @@
     font-size: 2rem;
   }
 }
+
+.vehicle-search-div {
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+.vehicle-search-div h2 {
+  font-weight: bold;
+}
+
+.featured-vehicles-div {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+
+.featured-vehicles-div h2 {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.vehicle-card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.vehicle-card:hover {
+  transform: translateY(-5px);
+}
+
+.vehicle-image-placeholder {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e9ecef;
+  font-size: 65px;
+}
+
+.why-choose-us-div {
+  padding: 70px 0;
+  background-color: #ffffff;
+}
+
+.why-choose-us-div h2 {
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+.benefit-card {
+  border: none;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+}
+
+.benefit-icon {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.benefit-card .card-title {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.benefit-card .card-text {
+  color: #6c757d;
+}
