@@ -41,7 +41,7 @@ function WhyChooseUs() {
             <Row className='g-4'>
                 {benefits.map((benefit)=>(
                     <Col key={benefit.id} xs={12} sm={6} lg={3}>
-                    <Card style={{ width: '18rem' }} className='benefit-card h-100'>
+                    <Card className='benefit-card h-100'>
                     {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
                     <Card.Body>
                         <div className='benefit-icon'>
