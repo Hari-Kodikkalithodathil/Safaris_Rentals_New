@@ -24,7 +24,7 @@ class VehicleAPIView(APIView):
                 pk=pk
             )
 
-            serializer=VehicleSerializer(vehicle)
+            serializer=VehicleSerializer(vehicle, context={"request": request})
 
             return Response(
                 serializer.data,
@@ -57,7 +57,7 @@ class VehicleAPIView(APIView):
                 seating_capacity=seating_capacity
             )
 
-        serializer=VehicleSerializer(vehicles, many=True)
+        serializer=VehicleSerializer(vehicles, many=True, context={"request":request})
 
         return Response(
             serializer.data,

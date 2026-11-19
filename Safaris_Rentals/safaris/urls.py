@@ -1,3 +1,6 @@
+from django.conf import settings
+from django.conf.urls.static import static
+
 """
 URL configuration for safaris project.
 
@@ -30,3 +33,8 @@ urlpatterns = [
     path('api/',include("accounts.urls")),
     path('api/vehicles/', include("vehicles.urls"))
 ]
+
+if settings.DEBUG:
+    urlpatterns+=static(
+        settings.MEDIA_URL,
+        document_root=settings.MEDIA_ROOT)
